@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - City Centre Garage</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="login-page">
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">City Centre Garage</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="quote.html">Get a Quote</a></li>
+        <li><a href="booking.html">Book</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html" class="active">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- LOGIN HERO -->
+  <section class="hero-banner" style="background-image: url('images/login-cover.jpg');">
+    <div class="hero-overlay">
+      <h2>Staff Login Portal</h2>
+      <p>Admin & Mechanic access to manage schedules and bookings.</p>
+    </div>
+  </section>
+
+  <!-- LOGIN FORM -->
+  <section class="split-section section-box-bg fade-in">
+    <div class="split-text">
+      <h3>Staff Login</h3>
+      <form id="loginForm">
+        <label for="username">Username</label>
+        <input type="text" id="username" required />
+
+        <label for="password">Password</label>
+        <input type="password" id="password" required />
+
+        <button type="submit" class="btn-primary">Login</button>
+      </form>
+    </div>
+    <img src="staff.jpg" alt="Staff at work" />
+  </section>
+
+  <!-- DASHBOARD -->
+  <section id="dashboardSection" style="display:none;">
+    <div class="section-box-bg fade-in">
+      <h2 id="dashboardTitle">Dashboard</h2>
+      <div id="dashboardContent" class="card-grid"></div>
+      <button class="btn-primary" onclick="logout()">Logout</button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-columns">
+      <div>
+        <h4>City Centre Garage</h4>
+        <p>Garage Lane, New Street<br>WestMidlands<br>Birmingham B1 2XY</p>
+      </div>
+      <div>
+        <h4>Opening Hours</h4>
+        <p>Mon–Fri: 9AM–6PM<br>Saturday: 10AM–2PM</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>📞 07741082095<br>📧 citycentregarage@gmail.com</p>
+      </div>
+    </div>
+    <p style="margin-top: 1rem;">&copy; 2025 City Centre Vehicle Garage | Staff Portal Access</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

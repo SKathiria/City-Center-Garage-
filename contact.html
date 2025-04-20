@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - City Centre Garage</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="contact-page">
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">City Centre Garage</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="quote.html">Get a Quote</a></li>
+        <li><a href="booking.html">Book</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- BANNER COVER -->
+  <section class="hero-banner" style="background-image: url('images/contact-cover.jpg');">
+    <div class="hero-overlay">
+      <h2>Contact Us for Queries</h2>
+      <p>Have a question or want to book in person? We’d love to hear from you.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT FORM + INFO -->
+  <section class="contact-grid-container fade-in">
+    <div class="contact-box info">
+      <h2>We're Here to Serve you</h2>
+      <p>You can contact us by message through the form if you have questions about our services or assistance needed with your vehicle. A member of our team will reply to your message without delay. Our help is always available to serve your needs. Pleasefell free to contact us through the given infomation below as well.</p>
+      <p><strong>📍 Address:</strong><br>Garage Lane, New Street<br>WestMidlands,<br>Birmingham B1 2XY</p>
+      <p><strong>📞 Phone:</strong> <a href="07741082095">07741082095</a></p>
+      <p><strong>📞 Telephone:</strong> <a href="07756983271">07756983271</a></p>
+      <p><strong>📧 Email:</strong> <a href="mailto:citycentregarage@gmail.com">citycentregarage@gmail.com</a> </p>
+      <p><strong>📧 Email:</strong> <a href="mailto:shreyakathiria@gmail.com">shreyakathiria@gmail.com</a> </p>
+    </div>
+  
+    <div class="contact-box form">
+      <form id="contactForm">
+        <label for="name"><strong>Name:</strong></label>
+        <input type="text" id="name" required />
+  
+        <label for="email"><strong>Email:</strong></label>
+        <input type="email" id="email" required />
+  
+        <label for="message"><strong>Message:</strong></label>
+        <textarea id="message" rows="5" required></textarea>
+  
+        <button type="submit" class="btn-primary">Send Message</button>
+        <div id="contactResult"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-columns">
+      <div>
+        <h4>City Centre Garage</h4>
+        <p>Garage Lane, New Street<br>WestMidlands<br>Birmingham B1 2XY</p>
+      </div>
+      <div>
+        <h4>Opening Hours</h4>
+        <p>Mon–Fri: 9AM–6PM<br>Saturday: 10AM–2PM</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>📞 07741082095<br>📧 citycentregarage@gmail.com</p>
+      </div>
+    </div>
+    <p style="margin-top: 1rem;">&copy; 2025 City Centre Vehicle Garage | We're here to help.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

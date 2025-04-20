@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Appointment - City Centre Garage</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="booking-page">
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">City Centre Garage</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="quote.html">Get a Quote</a></li>
+        <li><a href="booking.html" class="active">Book</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- BANNER -->
+ <!-- BOOKING BANNER -->
+<section class="booking-banner">
+    <div class="hero-overlay">
+      <h2>Book an Appointment</h2>
+      <p>Schedule your visit now — fast service, flexible slots, expert mechanics.</p>
+    </div>
+  </section>
+
+  <!-- BOOKING FORM -->
+  <section class="booking-form-wrapper fade-in">
+    <h2>Book Your Service</h2>
+    <form id="bookingForm">
+        <label for="nameBooking">Name</label>
+        <input type="text" id="nameBooking" required />
+      
+        <label for="emailBooking">Email</label>
+        <input type="email" id="emailBooking" required />
+      
+        <label for="phoneBooking">Contact Number</label>
+        <input type="tel" id="phoneBooking" required />
+      
+        <label for="vehicleBooking">Vehicle Type</label>
+        <select id="vehicleBooking" required>
+          <option value="">-- Select Vehicle --</option>
+          <option value="SUV">SUV</option>
+          <option value="Minibus">Minibus</option>
+          <option value="Convertible">Convertible</option>
+          <option value="Other">Other</option>
+        </select>
+      
+        <label for="serviceBooking">Service Type</label>
+        <select id="serviceBooking" required>
+          <option value="">-- Select Service --</option>
+          <option value="Health Check">Health Check</option>
+          <option value="General Service">General Service</option>
+          <option value="Minor Repair">Minor Repair</option>
+          <option value="Major Repair">Major Repair</option>
+          <option value="MOT">MOT</option>
+        </select>
+      
+        <label for="bookingDate">Preferred Date</label>
+        <input type="date" id="bookingDate" required />
+      
+        <label for="bookingTime">Preferred Time</label>
+        <input type="time" id="bookingTime" required />
+      
+        <button type="submit" class="btn-primary">Confirm Booking</button>
+        <div id="bookingResult" style="margin-top: 1rem; font-weight: bold;"></div>
+      </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-columns">
+      <div>
+        <h4>City Centre Garage</h4>
+        <p>Garage Lane, New Street<br>WestMidlands<br>Birmingham B1 2XY</p>
+      </div>
+      <div>
+        <h4>Opening Hours</h4>
+        <p>Mon–Fri: 9AM–6PM<br>Saturday: 10AM–2PM</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>📞 07741082095<br>📧 citycentregarage@gmail.com</p>
+      </div>
+    </div>
+    <p style="margin-top: 1rem;">&copy; 2025 City Centre Vehicle Garage | Clear Pricing. Trusted Mechanics.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

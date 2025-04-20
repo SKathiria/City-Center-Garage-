@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Get a Quote - City Centre Vehicle Garage</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="quote-page">
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">City Centre Garage</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="quote.html" class="active">Get a Quote</a></li>
+        <li><a href="booking.html">Book</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- BANNER COVER -->
+  <section class="hero-banner" style="background-image: url('images/quote-banner.jpg');">
+    <div class="hero-overlay">
+      <h2>Request a Quick Quote</h2>
+      <p>Fill out the form below to get a fast and accurate service estimate.</p>
+    </div>
+  </section>
+
+  <section class="contact-grid-container fade-in">
+    <div class="contact-box info">
+      <h2>How It Works</h2>
+      <p>Select your vehicle type and services you’re interested in. If you include an MOT, you’ll need to provide its expiry and desired service date. Saturday services incur an additional fee.</p>
+      <p><strong>🛠 Services Offered:</strong></p>
+      <ul>
+        <li>General Service, Repairs, Health Check</li>
+        <li>MOT Bookings (conditions apply)</li>
+        <li>Prices vary by vehicle type</li>
+      </ul>
+      <p><strong>📋 Quotes are VAT Exclusive</strong></p>
+    </div>
+  
+    <div class="contact-box form">
+      <h2>Quote Calculator</h2>
+      <form id="quoteForm">
+        <label for="vehicleType"><strong>Vehicle Type</strong></label>
+        <select id="vehicleType" required>
+          <option value="">-- Select Vehicle --</option>
+          <option value="SUV">SUV</option>
+          <option value="Minibus">Minibus</option>
+          <option value="Convertible">Convertible</option>
+          <option value="Other">Other</option>
+        </select>
+  
+        <label><strong>Select Service(s):</strong></label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="service" value="Health Check" /> Health Check</label>
+          <label><input type="checkbox" name="service" value="General Service" /> General Service</label>
+          <label><input type="checkbox" name="service" value="Minor Repair" /> Minor Repair</label>
+          <label><input type="checkbox" name="service" value="Major Repair" /> Major Repair</label>
+          <label><input type="checkbox" name="service" value="MOT" /> MOT</label>
+        </div>
+  
+        <div id="motFields" style="display:none;">
+          <label for="motExpiry"><strong>MOT Expiry Date</strong></label>
+          <input type="date" id="motExpiry" />
+  
+          <label for="serviceDate"><strong>Preferred Service Date</strong></label>
+          <input type="date" id="serviceDate" />
+        </div>
+  
+        <button type="button" class="btn-primary" onclick="calculateQuote()">Calculate Quote</button>
+        <div id="quoteResult" style="margin-top: 1rem; font-weight: bold;"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-columns">
+      <div>
+        <h4>City Centre Garage</h4>
+        <p>Garage Lane, New Street<br>WestMidlands<br>Birmingham B1 2XY</p>
+      </div>
+      <div>
+        <h4>Opening Hours</h4>
+        <p>Mon–Fri: 9AM–6PM<br>Saturday: 10AM–2PM</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>📞 07741082095<br>📧 citycentregarage@gmail.com</p>
+      </div>
+    </div>
+    <p style="margin-top: 1rem;">&copy; 2025 City Centre Vehicle Garage | Fair Prices, Fast Quotes.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
